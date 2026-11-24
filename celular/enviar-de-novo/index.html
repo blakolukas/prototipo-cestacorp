@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Enviar de novo · Gincana Solidária</title>
+<link rel="icon" href="/assets/cestacorp-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif&amp;display=swap">
+<style>:root{--color-text-default:#0E1120;--color-text-muted:#5E6372;--color-text-inverse:#FFFFFF;--color-text-link:#2736A6;--color-text-link-hover:#1E2A6E;--color-text-brand:#1E2A6E;--color-text-success:#2F6A12;--color-text-warning:#7A4E00;--color-text-danger:#A3231A;--color-text-danger-strong:#7A1A13;--color-bg-default:#FFFFFF;--color-bg-subtle:#F7F8FA;--color-bg-sunken:#F1F2F5;--color-bg-inverse:#0E1120;--color-bg-inverse-hover:#262A3B;--color-bg-brand-soft:#EEF1FC;--color-bg-success-soft:#EEF7E6;--color-bg-warning-soft:#FFF6DD;--color-bg-danger-soft:#FDECEA;--color-border-default:#E6E8EE;--color-border-strong:#D3D6DE;--color-border-hover:#B9BDC8;--color-border-focus:#2736A6;--color-border-success:#BFE0A8;--color-border-warning:#F3D48A;--color-border-danger:#F2B8B1;--color-icon-subtle:#8A8F9C;--color-icon-brand:#2736A6;--color-icon-success:#3F9A2A;--color-icon-warning:#E3A008;--color-icon-danger:#D9442F;--color-scrim:rgba(14, 17, 32, 0.45);--shadow-focus:0 0 0 4px rgba(39, 54, 166, 0.14);--shadow-lift:0 12px 32px -12px rgba(30, 42, 110, 0.22);--shadow-popover:0 20px 48px -16px rgba(14, 17, 32, 0.28);--shadow-overlay:0 32px 80px -24px rgba(9, 14, 60, 0.45);--duration-fast:150ms;--duration-base:220ms;--duration-slow:420ms;--ease-out:cubic-bezier(0.2, 0.7, 0.2, 1);--radius-xs:2px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-2xl:24px;--radius-full:999px}
+body{margin:0}
+a{color:var(--color-text-link)}a:not([class]):hover{color:var(--color-text-link-hover)}
+:focus-visible{outline:2px solid var(--color-border-focus);outline-offset:2px}
+.j-btn{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),transform var(--duration-fast) var(--ease-out)}
+.j-btn:active{transform:translateY(1px)}
+.j-btn--primary{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-btn--primary:hover{background:var(--color-bg-inverse-hover);border-color:var(--color-bg-inverse-hover);color:var(--color-text-inverse);box-shadow:var(--shadow-lift)}
+.j-btn--secondary{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-btn--secondary:hover{background:var(--color-bg-subtle);border-color:var(--color-text-default);color:var(--color-text-default)}
+.j-btn--destructive{background:var(--color-text-danger);border:1px solid var(--color-text-danger);color:var(--color-text-inverse)}
+.j-btn--destructive:hover{background:var(--color-text-danger-strong);border-color:var(--color-text-danger-strong)}
+.j-btn--secondary-danger{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-danger)}
+.j-btn--secondary-danger:hover{background:var(--color-bg-danger-soft);border-color:var(--color-text-danger);color:var(--color-text-danger)}
+.j-btn--link{background:transparent;border:none;color:var(--color-text-link);text-decoration:underline;text-decoration-color:rgba(39,54,166,.35);text-underline-offset:4px}
+.j-btn--link:hover{color:var(--color-text-link-hover);text-decoration-color:currentColor}
+.j-btn--danger{background:transparent;border:none;color:var(--color-text-danger);text-decoration:underline;text-decoration-color:rgba(163,35,26,.35);text-underline-offset:4px}
+.j-btn--danger:hover{text-decoration-color:currentColor}
+.j-btn[disabled]{cursor:not-allowed}
+.j-chip{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-chip--off{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-chip--off:hover{border-color:var(--color-text-default)}
+.j-chip--on{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-chip-dyn:hover{border-color:var(--color-text-default)!important}
+.j-nav{transition:background-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-nav:not([aria-current]):hover{background:var(--color-bg-subtle);color:var(--color-text-default)!important}
+.j-lift{transition:transform var(--duration-base) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),border-color var(--duration-base) var(--ease-out)}
+.j-lift:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);border-color:var(--color-border-strong)!important}
+.j-item{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-item[aria-pressed="false"]:hover{background:var(--color-bg-subtle)!important}
+.j-row{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-row:hover{background:var(--color-bg-subtle)}
+input,select,textarea{transition:border-color var(--duration-fast) var(--ease-out),box-shadow var(--duration-fast) var(--ease-out)}
+input:hover,select:hover,textarea:hover{border-color:var(--color-border-hover)!important}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--color-border-focus)!important;box-shadow:var(--shadow-focus)}
+.j-bar{transition:width var(--duration-slow) var(--ease-out)}
+.j-pulse{animation:jpulse 2s var(--ease-out) infinite}
+@keyframes jpulse{0%{box-shadow:0 0 0 0 rgba(63,154,42,.5)}70%,100%{box-shadow:0 0 0 7px rgba(63,154,42,0)} }
+.j-in{animation:jin 260ms var(--ease-out)}
+@keyframes jin{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none} }
+.j-spin{animation:jspin 700ms linear infinite}
+@keyframes jspin{to{transform:rotate(360deg)} }
+.j-pop{animation:jpop var(--duration-slow) var(--ease-out)}
+@keyframes jpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08);opacity:1}100%{transform:scale(1)} }
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important} }
+</style>
+<link rel="stylesheet" href="/proto.css">
+</head>
+<body class="proto-celular">
+<div id="app"></div>
+<script type="text/x-dc-template" id="dc-template">
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; display: flex; flex-direction: column; background: #FFFFFF; color: #0E1120; font-family: Geist, Inter, system-ui, sans-serif; font-size: 15px; line-height: 1.5"><sc-if value="{{ editando }}" hint-placeholder-val="{{ true }}"><div style="height: 844px; display: flex; flex-direction: column"><main style="flex: 1 1 auto; min-height: 0; padding: 16px 20px; display: flex; flex-direction: column; gap: 16px"><header style="display: flex; align-items: center; gap: 12px; min-height: 44px"><a href="/celular/meus-lancamentos" aria-label="Voltar para meus lançamentos" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; box-sizing: border-box; border-radius: 50%; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; cursor: pointer; flex: none; text-decoration: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 5.5 8 11l5.5 5.5"></path></svg></a><h1 style="margin: 0; flex: 1 1 auto; font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em">Enviar de novo</h1><span style="display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 8px; border-radius: 8px; background: #F1F2F5; color: #5E6372; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.06em; text-transform: uppercase"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 50%; background: #0D9488"></span>Turquesa</span></header><div role="note" style="display: flex; gap: 12px; padding: 14px 16px; border-radius: 16px; background: #FDECEA; color: #7A1A13"><span aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #CCFBF1; color: #115E59; font-size: 12px; font-weight: 600; flex: none">BF</span><span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 13px; line-height: 1.45; font-weight: 600">Bruno Farias recusou em 12 nov</span><span style="font-size: 15px; line-height: 1.5">“A foto não mostra a balança.”</span></span></div><section style="border-radius: 20px; border: 1px solid #E6E8EE; background: #FFFFFF; padding: 14px 16px; display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 12px; background: #EEF1FC; color: #1E2A6E; flex: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7.5"></circle><circle cx="11" cy="11" r="4"></circle></svg></span><span style="display: flex; flex-direction: column; flex: 1 1 auto"><span style="font-size: 15px; line-height: 1.5; font-weight: 600">Tampinhas plásticas</span><span style="font-size: 13px; line-height: 1.45; color: #5E6372">10 pts por kg · mesma ação do envio recusado</span></span></section><section style="border-radius: 20px; border: 1px solid #E6E8EE; background: #FFFFFF; padding: 16px; display: flex; flex-direction: column; gap: 10px"><label for="qtd" style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.06em; text-transform: uppercase; color: #5E6372">Quantidade</label><div style="display: flex; align-items: center; gap: 12px"><button type="button" aria-label="Diminuir quantidade" onClick="{{ menos }}" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; box-sizing: border-box; border-radius: 50%; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; cursor: pointer; flex: none; text-decoration: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h12"></path></svg></button><div style="flex: 1 1 auto; display: flex; align-items: baseline; justify-content: center; gap: 8px"><input id="qtd" type="text" inputmode="decimal" autocomplete="off" value="{{ qtdTxt }}" onChange="{{ digitar }}" style="width: 104px; height: 52px; padding: 0 8px; border-radius: 12px; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; font-family: inherit; font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; text-align: center; box-sizing: border-box"><span style="font-size: 15px; line-height: 1.5; font-weight: 600; color: #5E6372">kg</span></div><button type="button" aria-label="Aumentar quantidade" onClick="{{ mais }}" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; box-sizing: border-box; border-radius: 50%; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; cursor: pointer; flex: none; text-decoration: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5v12"></path><path d="M5 11h12"></path></svg></button></div></section><section style="border-radius: 20px; border: 1px solid #E6E8EE; background: #FFFFFF; padding: 16px; display: flex; flex-direction: column; gap: 10px"><h2 style="margin: 0; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.06em; text-transform: uppercase; color: #5E6372">Foto nova · obrigatória</h2><sc-if value="{{ semFoto }}" hint-placeholder-val="{{ true }}"><button type="button" onClick="{{ anexarFoto }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 52px; border-radius: 12px; border: 1px dashed #D3D6DE; background: #F7F8FA; color: #0E1120; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h5L15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><circle cx="11" cy="12" r="3.2"></circle></svg>Tirar foto com a balança aparecendo</button></sc-if><sc-if value="{{ comFoto }}" hint-placeholder-val="{{ false }}"><button type="button" onClick="{{ anexarFoto }}" style="display: flex; align-items: center; justify-content: space-between; gap: 10px; width: 100%; height: 52px; padding: 0 16px; border-radius: 12px; border: 1px solid #BFE0A8; background: #EEF7E6; color: #2F6A12; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer"><span style="display: flex; align-items: center; gap: 8px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5 9.5 15.5 16.5 7.5"></path></svg>Foto nova anexada</span><span>Trocar</span></button></sc-if><span style="font-size: 13px; line-height: 1.45; color: #5E6372">A foto recusada continua no histórico, mas não conta.</span></section></main><footer style="flex: none; padding: 16px 20px 24px; border-top: 1px solid #E6E8EE; background: #FFFFFF; display: flex; flex-direction: column; gap: 12px"><div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 12px"><div aria-live="polite" style="line-height: 1; font-weight: 400; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; font-size: 48px">{{ pontosTexto }}</div><div style="font-size: 13px; line-height: 1.45; color: #5E6372; text-align: right">{{ contaTexto }}</div></div><button type="button" class="j-btn" disabled="{{ bloqueado }}" aria-busy="{{ enviando }}" onClick="{{ enviar }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 52px; padding: 0 24px; border: none; border-radius: 999px; background: {{ enviarBg }}; color: {{ enviarCor }}; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer"><sc-if value="{{ enviando }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" class="j-spin" style="width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.35); border-top-color: #FFFFFF"></span></sc-if>{{ enviarTexto }}</button><div style="font-size: 13px; line-height: 1.45; color: #5E6372; text-align: center">{{ avisoTexto }}</div></footer></div></sc-if><sc-if value="{{ enviado }}" hint-placeholder-val="{{ false }}"><div class="j-in" style="height: 844px; box-sizing: border-box; padding: 16px 20px 24px; display: flex; flex-direction: column; gap: 24px"><div style="flex: 1 1 auto; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; text-align: center"><span aria-hidden="true" class="j-pop" style="display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; border-radius: 50%; background: #EEF7E6; color: #2F6A12"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5 9.5 15.5 16.5 7.5"></path></svg></span><h1 role="status" style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 48px; line-height: 1.05; font-weight: 400; letter-spacing: -0.01em">Reenviado</h1><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5E6372">{{ resumo }}</p><p style="margin: 8px 0 0; max-width: 300px; font-size: 13px; line-height: 1.45; color: #5E6372">Bruno Farias recebe de novo e confere a foto nova. Você vê a resposta em Meus lançamentos.</p></div><div style="display: flex; flex-direction: column; gap: 8px"><a href="/celular/meus-lancamentos" class="j-btn j-btn--primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 24px; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; text-decoration-skip-ink: auto; width: 100%; text-decoration: none">Ver meus lançamentos</a><a href="/celular/inicio" class="j-btn j-btn--secondary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 24px; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; text-decoration-skip-ink: auto; width: 100%; text-decoration: none">Voltar ao início</a></div></div></sc-if></div>
+</script>
+<script type="text/x-dc-logic" id="dc-logic">class Component extends DCLogic {
+renderVals() {
+const st = this.state || {};
+const fmt = (n) => String(Math.round(n * 10) / 10).replace('.', ',');
+const txt = st.qtdTxt != null ? st.qtdTxt : '1';
+const num = parseFloat(String(txt).replace(',', '.'));
+const valido = isFinite(num) && num > 0;
+const qtd = valido ? num : 0;
+const foto = !!st.foto;
+const fase = st.fase || 'editando';
+const enviando = fase === 'enviando';
+const pontos = Math.round(qtd * 10);
+const bloqueado = !foto || !valido || enviando;
+let aviso = 'Mesma ação e mesmo líder. Só a foto precisa ser nova.';
+if (enviando) { aviso = 'Enviando a foto…'; } else if (!valido) { aviso = 'Informe uma quantidade maior que zero.'; } else if (!foto) { aviso = 'Anexe uma foto nova para poder reenviar.'; }
+return {
+qtdTxt: txt,
+digitar: (e) => this.setState({ qtdTxt: e.target.value }),
+menos: () => this.setState({ qtdTxt: fmt(Math.max(0.5, (valido ? qtd : 0.5) - 0.5)) }),
+mais: () => this.setState({ qtdTxt: fmt((valido ? qtd : 0) + 0.5) }),
+semFoto: !foto, comFoto: foto,
+anexarFoto: () => this.setState({ foto: !foto }),
+pontosTexto: pontos + (pontos === 1 ? ' ponto' : ' pontos'),
+contaTexto: valido ? fmt(qtd) + ' kg × 10 pts' : '',
+bloqueado: bloqueado,
+enviando: enviando,
+enviar: () => { this.setState({ fase: 'enviando' }); setTimeout(() => this.setState({ fase: 'enviado' }), 900); },
+enviarTexto: enviando ? 'Enviando…' : 'Reenviar para aprovação',
+enviarBg: (bloqueado && !enviando) ? '#F1F2F5' : '#0E1120',
+enviarCor: (bloqueado && !enviando) ? '#5E6372' : '#FFFFFF',
+avisoTexto: aviso,
+editando: fase !== 'enviado',
+enviado: fase === 'enviado',
+resumo: 'Tampinhas plásticas · ' + fmt(qtd) + ' kg · Equipe Turquesa'
+};
+}
+}
+</script>
+<a class="proto-telas" href="/" title="Todas as telas do protótipo">Telas</a>
+<script src="/morphdom.min.js"></script>
+<script src="/proto.js"></script>
+</body>
+</html>

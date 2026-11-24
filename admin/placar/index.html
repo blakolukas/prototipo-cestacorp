@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Placar · em andamento · Gincana Solidária</title>
+<link rel="icon" href="/assets/cestacorp-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif&amp;display=swap">
+<style>:root{--color-text-default:#0E1120;--color-text-muted:#5E6372;--color-text-inverse:#FFFFFF;--color-text-link:#2736A6;--color-text-link-hover:#1E2A6E;--color-text-brand:#1E2A6E;--color-text-success:#2F6A12;--color-text-warning:#7A4E00;--color-text-danger:#A3231A;--color-text-danger-strong:#7A1A13;--color-bg-default:#FFFFFF;--color-bg-subtle:#F7F8FA;--color-bg-sunken:#F1F2F5;--color-bg-inverse:#0E1120;--color-bg-inverse-hover:#262A3B;--color-bg-brand-soft:#EEF1FC;--color-bg-success-soft:#EEF7E6;--color-bg-warning-soft:#FFF6DD;--color-bg-danger-soft:#FDECEA;--color-border-default:#E6E8EE;--color-border-strong:#D3D6DE;--color-border-hover:#B9BDC8;--color-border-focus:#2736A6;--color-border-success:#BFE0A8;--color-border-warning:#F3D48A;--color-border-danger:#F2B8B1;--color-icon-subtle:#8A8F9C;--color-icon-brand:#2736A6;--color-icon-success:#3F9A2A;--color-icon-warning:#E3A008;--color-icon-danger:#D9442F;--color-scrim:rgba(14, 17, 32, 0.45);--shadow-focus:0 0 0 4px rgba(39, 54, 166, 0.14);--shadow-lift:0 12px 32px -12px rgba(30, 42, 110, 0.22);--shadow-popover:0 20px 48px -16px rgba(14, 17, 32, 0.28);--shadow-overlay:0 32px 80px -24px rgba(9, 14, 60, 0.45);--duration-fast:150ms;--duration-base:220ms;--duration-slow:420ms;--ease-out:cubic-bezier(0.2, 0.7, 0.2, 1);--radius-xs:2px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-2xl:24px;--radius-full:999px}
+body{margin:0}
+a{color:var(--color-text-link)}a:not([class]):hover{color:var(--color-text-link-hover)}
+:focus-visible{outline:2px solid var(--color-border-focus);outline-offset:2px}
+.j-btn{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),transform var(--duration-fast) var(--ease-out)}
+.j-btn:active{transform:translateY(1px)}
+.j-btn--primary{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-btn--primary:hover{background:var(--color-bg-inverse-hover);border-color:var(--color-bg-inverse-hover);color:var(--color-text-inverse);box-shadow:var(--shadow-lift)}
+.j-btn--secondary{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-btn--secondary:hover{background:var(--color-bg-subtle);border-color:var(--color-text-default);color:var(--color-text-default)}
+.j-btn--destructive{background:var(--color-text-danger);border:1px solid var(--color-text-danger);color:var(--color-text-inverse)}
+.j-btn--destructive:hover{background:var(--color-text-danger-strong);border-color:var(--color-text-danger-strong)}
+.j-btn--secondary-danger{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-danger)}
+.j-btn--secondary-danger:hover{background:var(--color-bg-danger-soft);border-color:var(--color-text-danger);color:var(--color-text-danger)}
+.j-btn--link{background:transparent;border:none;color:var(--color-text-link);text-decoration:underline;text-decoration-color:rgba(39,54,166,.35);text-underline-offset:4px}
+.j-btn--link:hover{color:var(--color-text-link-hover);text-decoration-color:currentColor}
+.j-btn--danger{background:transparent;border:none;color:var(--color-text-danger);text-decoration:underline;text-decoration-color:rgba(163,35,26,.35);text-underline-offset:4px}
+.j-btn--danger:hover{text-decoration-color:currentColor}
+.j-btn[disabled]{cursor:not-allowed}
+.j-chip{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-chip--off{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-chip--off:hover{border-color:var(--color-text-default)}
+.j-chip--on{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-chip-dyn:hover{border-color:var(--color-text-default)!important}
+.j-nav{transition:background-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-nav:not([aria-current]):hover{background:var(--color-bg-subtle);color:var(--color-text-default)!important}
+.j-lift{transition:transform var(--duration-base) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),border-color var(--duration-base) var(--ease-out)}
+.j-lift:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);border-color:var(--color-border-strong)!important}
+.j-item{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-item[aria-pressed="false"]:hover{background:var(--color-bg-subtle)!important}
+.j-row{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-row:hover{background:var(--color-bg-subtle)}
+input,select,textarea{transition:border-color var(--duration-fast) var(--ease-out),box-shadow var(--duration-fast) var(--ease-out)}
+input:hover,select:hover,textarea:hover{border-color:var(--color-border-hover)!important}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--color-border-focus)!important;box-shadow:var(--shadow-focus)}
+.j-bar{transition:width var(--duration-slow) var(--ease-out)}
+.j-pulse{animation:jpulse 2s var(--ease-out) infinite}
+@keyframes jpulse{0%{box-shadow:0 0 0 0 rgba(63,154,42,.5)}70%,100%{box-shadow:0 0 0 7px rgba(63,154,42,0)} }
+.j-in{animation:jin 260ms var(--ease-out)}
+@keyframes jin{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none} }
+.j-spin{animation:jspin 700ms linear infinite}
+@keyframes jspin{to{transform:rotate(360deg)} }
+.j-pop{animation:jpop var(--duration-slow) var(--ease-out)}
+@keyframes jpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08);opacity:1}100%{transform:scale(1)} }
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important} }
+</style>
+<link rel="stylesheet" href="/proto.css">
+</head>
+<body class="proto-computador">
+<div id="app"></div>
+<script type="text/x-dc-template" id="dc-template">
+<div style="min-height: 100vh; background: #FFFFFF; color: #0E1120; font-family: Geist, Inter, system-ui, sans-serif; font-size: 15px; line-height: 1.5"><div style="max-width: 1240px; min-height: 100vh; margin: 0 auto; box-sizing: border-box; border-left: 1px dashed #D3D6DE; border-right: 1px dashed #D3D6DE; display: flex; flex-direction: column"><header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 16px clamp(16px, 3vw, 32px); border-bottom: 1px dashed #D3D6DE"><a href="/admin/placar" style="display: flex; align-items: center; gap: 10px; color: #0E1120; line-height: 1.5; font-weight: 600; font-size: 17px; text-decoration: none"><img src="/assets/cestacorp-mark.png" alt="" style="display: block; width: 28px; height: 28px; flex: none">Gincana Solidária</a><nav aria-label="Principal" style="display: flex; flex-wrap: wrap; gap: 2px"><a class="j-nav" href="/admin/placar" aria-current="page" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 999px; background: #F1F2F5; color: #0E1120; font-weight: 500; font-size: 15px; line-height: 1.5; text-decoration: none">Placar</a><a class="j-nav" href="/admin/aprovacoes" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 999px; color: #5E6372; font-weight: 400; font-size: 15px; line-height: 1.5; text-decoration: none">Aprovações<span style="display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 20px; padding: 0 6px; box-sizing: border-box; border-radius: 8px; background: #EEF7E6; color: #2F6A12; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; font-weight: 500">6</span></a><a class="j-nav" href="/admin/gincana" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 999px; color: #5E6372; font-weight: 400; font-size: 15px; line-height: 1.5; text-decoration: none">Cadastros</a><a class="j-nav" href="/admin/auditoria" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border-radius: 999px; color: #5E6372; font-weight: 400; font-size: 15px; line-height: 1.5; text-decoration: none">Auditoria</a></nav><div style="position: relative"><button type="button" aria-label="Administradora, abrir menu da conta" aria-haspopup="menu" aria-expanded="{{ menuAberto }}" onClick="{{ alternarMenu }}" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border-radius: 50%; border: 1px solid #D3D6DE; background: #FFFFFF; cursor: pointer"><span aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #0E1120; color: #FFFFFF; font-size: 12px; font-weight: 600; flex: none">AD</span></button><sc-if value="{{ menuAberto }}" hint-placeholder-val="{{ false }}"><div role="menu" class="j-in" style="position: absolute; right: 0; top: 52px; z-index: 20; width: 264px; padding: 8px; box-sizing: border-box; border-radius: 16px; border: 1px solid #E6E8EE; background: #FFFFFF; box-shadow: 0 20px 48px -16px rgba(14, 17, 32, 0.28); text-align: left"><div style="display: flex; flex-direction: column; padding: 8px 12px 10px"><span style="font-size: 15px; line-height: 1.5; font-weight: 600">Administradora</span><span style="font-size: 13px; line-height: 1.45; color: #5E6372">admin@cestacorp.com.br</span></div><div aria-hidden="true" style="height: 1px; margin: 0 4px 6px; background: #E6E8EE"></div><a role="menuitem" href="/colaborador/placar" class="j-row" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: 12px; color: #0E1120; text-decoration: none; font-size: 15px; line-height: 1.5">Ver como colaborador</a><a role="menuitem" href="/esqueci-senha" class="j-row" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: 12px; color: #0E1120; text-decoration: none; font-size: 15px; line-height: 1.5">Trocar senha</a><div aria-hidden="true" style="height: 1px; margin: 6px 4px; background: #E6E8EE"></div><a role="menuitem" href="/entrar" class="j-row" style="display: flex; align-items: center; min-height: 44px; padding: 0 12px; border-radius: 12px; color: #A3231A; text-decoration: none; font-size: 15px; line-height: 1.5">Sair</a></div></sc-if></div></header><main style="width: 100%; max-width: 1088px; margin: 0 auto; box-sizing: border-box; padding: 48px 24px 96px; display: flex; flex-direction: column; gap: 32px"><div style="display: flex; flex-direction: column; gap: 24px"><div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px"><div style="display: flex; flex-direction: column; gap: 12px; flex: 1 1 420px; min-width: 0"><h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 48px; line-height: 1.05; font-weight: 400; letter-spacing: -0.01em; color: #0E1120; text-wrap: balance">{{ titulo }}.</h1><p style="margin: 0; max-width: 560px; font-size: 17px; line-height: 1.5; color: #5E6372; text-wrap: pretty">Pontos aprovados da edição 2026. Lançamentos pendentes só entram depois de aprovados.</p></div><div style="display: flex; flex-wrap: wrap; gap: 8px"><a href="/admin/exportar" class="j-btn j-btn--secondary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; text-decoration-skip-ink: auto; text-decoration: none"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4v10"></path><path d="M6.5 9.5 11 14l4.5-4.5"></path><path d="M5 18h12"></path></svg>Exportar relatório</a><a href="/admin/aprovacoes" class="j-btn j-btn--primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; text-decoration-skip-ink: auto; text-decoration: none">Revisar 6 pendentes<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h12"></path><path d="M12.5 6.5 17 11l-4.5 4.5"></path></svg></a></div></div></div><div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px"><div role="group" aria-label="Filtrar por ação" style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><sc-for list="{{ filtros }}" as="f" hint-placeholder-count="4"><button type="button" class="j-chip j-chip-dyn" aria-pressed="{{ f.ativo }}" onClick="{{ f.pick }}" style="display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; text-decoration: none; cursor: pointer; white-space: nowrap; border: 1px solid {{ f.borda }}; background: {{ f.bg }}; color: {{ f.cor }}">{{ f.nome }}</button></sc-for></div><span style="font-size: 13px; line-height: 1.45; color: #5E6372">Atualizado às 14:40</span></div><section aria-label="Ranking" style="border-radius: 20px; border: 1px solid #E6E8EE; background: #FFFFFF; padding: 24px clamp(16px, 3vw, 32px) 28px"><div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 32px"><div style="flex: 2 1 520px; min-width: 0"><div aria-hidden="true" style="display: flex; align-items: center; gap: 16px; padding: 0 0 10px; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.06em; text-transform: uppercase; color: #5E6372"><span style="flex: 0 0 24px">#</span><span style="flex: 1 1 150px">Equipe</span><span style="flex: 0 0 80px">7 dias</span><span style="flex: 1 1 100px">Distância</span><span style="flex: 0 0 88px; text-align: right">Pontos</span></div><ol aria-label="Ranking por equipe" style="list-style: none; margin: 0; padding: 0"><sc-for list="{{ linhas }}" as="t" hint-placeholder-count="4"><li style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; padding: 16px 0; border-top: 1px solid {{ t.borda }}"><span style="flex: 0 0 24px; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 13px; color: #5E6372">{{ t.pos }}</span><span style="display: flex; flex-direction: column; flex: 1 1 150px; min-width: 0"><span style="display: flex; align-items: center; gap: 8px; font-size: 15px; line-height: 1.5; font-weight: 600"><span aria-hidden="true" style="width: 8px; height: 8px; border-radius: 50%; background: {{ t.cor }}; flex: none"></span>{{ t.nome }}</span><span style="font-size: 13px; line-height: 1.45; color: #5E6372">{{ t.sub }}</span></span><svg aria-hidden="true" width="80" height="28" viewBox="0 0 96 28" preserveAspectRatio="none" style="display: block; flex: 0 0 80px; overflow: visible"><polyline points="{{ t.spark }}" fill="none" stroke="{{ t.cor }}" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"></polyline></svg><span style="display: flex; flex-direction: column; gap: 6px; flex: 1 1 100px; min-width: 0"><span aria-hidden="true" style="display: block; height: 6px; border-radius: 999px; background: #F1F2F5"><span class="j-bar" style="display: block; width: {{ t.pct }}; height: 6px; border-radius: 999px; background: {{ t.cor }}; opacity: {{ t.opac }}"></span></span><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: {{ t.distCor }}">{{ t.dist }}</span></span><span style="flex: 0 0 88px; display: flex; flex-direction: column; align-items: flex-end; gap: 2px"><span style="font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums">{{ t.pts }}</span><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: #2F6A12">{{ t.hoje }}</span></span></li></sc-for></ol><div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 1px solid #E6E8EE"><div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px"><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.06em; text-transform: uppercase; color: #5E6372">Divisão dos pontos</span><span style="display: flex; flex-wrap: wrap; gap: 8px 16px"><sc-for list="{{ fatias }}" as="s" hint-placeholder-count="4"><span style="display: inline-flex; align-items: center; gap: 6px; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: #5E6372"><span aria-hidden="true" style="width: 6px; height: 6px; border-radius: 50%; background: {{ s.cor }}"></span>{{ s.legenda }}</span></sc-for></span></div><div aria-hidden="true" style="display: flex; gap: 4px"><sc-for list="{{ fatias }}" as="s" hint-placeholder-count="4"><span class="j-bar" style="display: block; width: {{ s.pct }}; height: 8px; border-radius: 999px; background: {{ s.cor }}"></span></sc-for></div></div></div><aside aria-label="Resumo" style="flex: 1 1 260px; min-width: 0; display: flex; flex-direction: column; gap: 24px; padding-left: clamp(0px, 3vw, 32px); border-left: 1px dashed #D3D6DE"><div style="display: flex; flex-direction: column; gap: 8px"><span style="font-size: 13px; line-height: 1.45; color: #5E6372">Pontos aprovados · {{ filtroNome }}</span><span aria-live="polite" style="font-size: 56px; line-height: 1; font-weight: 400; letter-spacing: -0.04em; font-variant-numeric: tabular-nums">{{ total }}</span><span style="display: inline-flex; align-self: flex-start; align-items: center; gap: 6px; height: 24px; padding: 0 8px; border-radius: 8px; background: {{ hojeBg }}; color: {{ hojeCor }}; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none">{{ hoje }}</span></div><div style="display: flex; flex-direction: column; gap: 4px"><div style="display: flex; align-items: center; justify-content: space-between; gap: 8px"><h2 style="margin: 0; font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.06em; text-transform: uppercase; color: #5E6372">Últimas aprovações</h2><a href="/admin/auditoria" class="j-btn j-btn--link" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; text-decoration-skip-ink: auto">Auditoria</a></div><sc-if value="{{ temRecentes }}" hint-placeholder-val="{{ true }}"><ul style="list-style: none; margin: 0; padding: 0"><sc-for list="{{ recentes }}" as="r" hint-placeholder-count="4"><li class="j-row" style="display: flex; align-items: center; gap: 12px; padding: 10px 8px; margin: 0 -8px; border-radius: 12px"><span aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: {{ r.bg }}; color: {{ r.fg }}; font-size: 12px; font-weight: 600; flex: none">{{ r.ini }}</span><span style="display: flex; flex-direction: column; flex: 1 1 auto; min-width: 0"><span style="font-size: 13px; line-height: 1.45; font-weight: 600; color: #0E1120">{{ r.nome }}</span><span style="font-size: 13px; line-height: 1.45; color: #5E6372">{{ r.txt }} · {{ r.quando }}</span></span><span style="font-size: 15px; line-height: 1.5; font-weight: 600; color: #2F6A12; font-variant-numeric: tabular-nums">{{ r.pts }}</span></li></sc-for></ul></sc-if><sc-if value="{{ semRecentes }}" hint-placeholder-val="{{ false }}"><p style="margin: 0; padding: 16px; border-radius: 12px; background: #F7F8FA; font-size: 13px; line-height: 1.45; color: #5E6372">{{ semRecentesTexto }}</p></sc-if></div></aside></div></section><section aria-label="Arrecadação" style="border-radius: 20px; border: 1px solid #E6E8EE; background: #FFFFFF; padding: 4px clamp(16px, 3vw, 32px) 24px"><div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(190px, 100%), 1fr)); gap: 0 24px"><div style="display: flex; flex-direction: column; gap: 6px; padding: 20px 0 0"><span style="font-size: 13px; line-height: 1.45; color: #5E6372">Tampinhas</span><span style="font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums">184 kg</span><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: #2F6A12">+7,5 kg hoje</span></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 20px 0 0"><span style="font-size: 13px; line-height: 1.45; color: #5E6372">Roupa infantil</span><span style="font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums">160 peças</span><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: #2F6A12">+6 hoje</span></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 20px 0 0"><span style="font-size: 13px; line-height: 1.45; color: #5E6372">Atividade extra</span><span style="font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums">3 participações</span><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: #5E6372">sem novidade hoje</span></div><div style="display: flex; flex-direction: column; gap: 6px; padding: 20px 0 0"><span style="font-size: 13px; line-height: 1.45; color: #5E6372">Participação</span><span style="font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums">11 de 13</span><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: #5E6372">colaboradores já lançaram</span></div></div></section></main></div></div>
+</script>
+<script type="text/x-dc-logic" id="dc-logic">class Component extends DCLogic {
+renderVals() {
+const ZERADO = false;
+const st = this.state || {};
+const filtro = st.filtro || 'todas';
+const fmt = (n) => String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+const acoes = [
+{ id: 'tampinhas', nome: 'Tampinhas', longo: 'em tampinhas' },
+{ id: 'roupa', nome: 'Roupa infantil', longo: 'em roupa infantil' },
+{ id: 'extra', nome: 'Atividade extra', longo: 'em atividade extra' }
+];
+const base = [
+{ nome: 'Equipe Azul', curto: 'Azul', lider: 'Camila Duarte', pend: 2, cor: '#2563EB', pts: { tampinhas: 620, roupa: 720, extra: 50 }, hoje: { tampinhas: 30, roupa: 0, extra: 0 }, curva: [0.30, 0.42, 0.55, 0.66, 0.78, 0.90, 1] },
+{ nome: 'Equipe Laranja', curto: 'Laranja', lider: 'Paula Mendes', pend: 1, cor: '#D97706', pts: { tampinhas: 550, roupa: 660, extra: 50 }, hoje: { tampinhas: 0, roupa: 90, extra: 0 }, curva: [0.18, 0.26, 0.38, 0.52, 0.70, 0.86, 1] },
+{ nome: 'Equipe Turquesa', curto: 'Turquesa', lider: 'Bruno Farias', pend: 3, cor: '#0D9488', pts: { tampinhas: 410, roupa: 570, extra: 0 }, hoje: { tampinhas: 45, roupa: 0, extra: 0 }, curva: [0.40, 0.48, 0.60, 0.68, 0.80, 0.92, 1] },
+{ nome: 'Equipe Vinho', curto: 'Vinho', lider: 'Letícia Prado', pend: 0, cor: '#9D174D', pts: { tampinhas: 260, roupa: 450, extra: 50 }, hoje: { tampinhas: 0, roupa: 0, extra: 0 }, curva: [0.62, 0.70, 0.78, 0.86, 0.93, 0.98, 1] }
+];
+const zero = { tampinhas: 0, roupa: 0, extra: 0 };
+const equipes = ZERADO ? base.map((e) => Object.assign({}, e, { pts: zero, hoje: zero })) : base;
+const recentes = ZERADO ? [] : [
+{ ini: 'RL', bg: '#DBEAFE', fg: '#1E40AF', nome: 'Rafael Lima', acao: 'tampinhas', txt: 'Tampinhas · 3 kg', pts: '+30', quando: '14:40' },
+{ ini: 'DA', bg: '#FEF3C7', fg: '#92400E', nome: 'Diego Alves', acao: 'roupa', txt: 'Roupa infantil · 6 peças', pts: '+90', quando: '13:12' },
+{ ini: 'MS', bg: '#CCFBF1', fg: '#115E59', nome: 'Marina Souza', acao: 'tampinhas', txt: 'Tampinhas · 4,5 kg', pts: '+45', quando: '11:58' },
+{ ini: 'LP', bg: '#FCE7F3', fg: '#9D174D', nome: 'Letícia Prado', acao: 'extra', txt: 'Atividade extra', pts: '+50', quando: 'ontem' },
+{ ini: 'BF', bg: '#CCFBF1', fg: '#115E59', nome: 'Bruno Farias', acao: 'roupa', txt: 'Roupa infantil · 3 peças', pts: '+45', quando: 'ontem' },
+{ ini: 'PM', bg: '#FEF3C7', fg: '#92400E', nome: 'Paula Mendes', acao: 'tampinhas', txt: 'Tampinhas · 2 kg', pts: '+20', quando: 'ontem' },
+{ ini: 'CN', bg: '#DBEAFE', fg: '#1E40AF', nome: 'Carla Nunes', acao: 'extra', txt: 'Atividade extra', pts: '+50', quando: 'ontem' }
+];
+const soma = (o) => filtro === 'todas' ? o.tampinhas + o.roupa + o.extra : o[filtro];
+const valor = (e) => soma(e.pts);
+const ord = equipes.slice().sort((a, b) => valor(b) - valor(a) || a.curto.localeCompare(b.curto));
+const lider = valor(ord[0]);
+const max = Math.max(1, lider);
+const total = ord.reduce((s, e) => s + valor(e), 0);
+const hojeTotal = ord.reduce((s, e) => s + soma(e.hoje), 0);
+const atual = acoes.find((x) => x.id === filtro);
+const sufixo = atual ? ' ' + atual.longo : '';
+let titulo = ord[0].curto + ' lidera' + sufixo + ' por ' + fmt(lider - valor(ord[1])) + ' pontos';
+if (lider === 0) {
+titulo = atual ? 'Ainda não há pontos ' + atual.longo : 'A gincana começou. Nenhum ponto aprovado ainda';
+} else if (lider === valor(ord[1])) {
+const n = ord.filter((e) => valor(e) === lider).length;
+titulo = 'Empate' + sufixo + ': ' + n + ' equipes com ' + fmt(lider) + ' pontos';
+}
+const W = 96, H = 28;
+const linha = (e) => valor(e) === 0 ? '' : e.curva.map((c, k) => (Math.round(k * (W / 6) * 10) / 10) + ',' + (Math.round((H - 2 - (c * valor(e) / max) * (H - 4)) * 10) / 10)).join(' ');
+const rec = recentes.filter((r) => filtro === 'todas' || r.acao === filtro).slice(0, 4);
+return {
+menuAberto: !!st.menu,
+alternarMenu: () => this.setState({ menu: !st.menu }),
+titulo: titulo,
+total: fmt(total),
+hoje: hojeTotal > 0 ? '+' + fmt(hojeTotal) + ' hoje' : 'nada novo hoje',
+hojeBg: hojeTotal > 0 ? '#EEF7E6' : '#F1F2F5',
+hojeCor: hojeTotal > 0 ? '#2F6A12' : '#5E6372',
+filtroNome: atual ? atual.nome.toLowerCase() : 'todas as ações',
+filtros: [{ id: 'todas', nome: 'Todas' }].concat(acoes).map((f) => {
+const ativo = f.id === filtro;
+return { nome: f.nome, ativo: ativo, bg: ativo ? '#0E1120' : '#FFFFFF', borda: ativo ? '#0E1120' : '#D3D6DE', cor: ativo ? '#FFFFFF' : '#0E1120', pick: () => this.setState({ filtro: f.id }) };
+}),
+linhas: ord.map((e, idx) => {
+const pos = 1 + ord.filter((x) => valor(x) > valor(e)).length;
+const gap = lider - valor(e);
+const h = soma(e.hoje);
+return {
+nome: e.nome, cor: e.cor,
+sub: e.lider + ' · ' + (e.pend === 0 ? (lider === 0 ? 'sem lançamentos' : 'tudo aprovado') : e.pend + (e.pend === 1 ? ' pendente' : ' pendentes')),
+pos: lider === 0 ? '—' : '0' + pos,
+pct: (Math.round(valor(e) / max * 1000) / 10) + '%',
+opac: pos === 1 ? '1' : '0.45',
+pts: fmt(valor(e)),
+dist: lider === 0 ? 'sem pontos ainda' : (gap === 0 ? 'na liderança' : 'a ' + fmt(gap) + ' do 1º'),
+distCor: lider > 0 && gap === 0 ? '#2F6A12' : '#5E6372',
+hoje: h > 0 ? '+' + h + ' hoje' : '',
+spark: linha(e),
+borda: idx === 0 ? 'transparent' : '#E6E8EE'
+};
+}),
+fatias: total > 0 ? ord.map((e) => ({
+cor: e.cor,
+pct: (Math.round(valor(e) / total * 1000) / 10) + '%',
+legenda: e.curto + ' ' + Math.round(valor(e) / total * 100) + '%'
+})) : [{ cor: '#E6E8EE', pct: '100%', legenda: 'Sem pontos para dividir' }],
+recentes: rec,
+temRecentes: rec.length > 0,
+semRecentes: rec.length === 0,
+semRecentesTexto: ZERADO ? 'Quando a primeira ação for aprovada, ela aparece aqui.' : 'Nenhuma aprovação recente' + (atual ? ' ' + atual.longo : '') + '.'
+};
+}
+}
+</script>
+<a class="proto-telas" href="/" title="Todas as telas do protótipo">Telas</a>
+<script src="/morphdom.min.js"></script>
+<script src="/proto.js"></script>
+</body>
+</html>

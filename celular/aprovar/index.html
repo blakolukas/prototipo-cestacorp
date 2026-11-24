@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Aprovar no celular · Gincana Solidária</title>
+<link rel="icon" href="/assets/cestacorp-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif&amp;display=swap">
+<style>:root{--color-text-default:#0E1120;--color-text-muted:#5E6372;--color-text-inverse:#FFFFFF;--color-text-link:#2736A6;--color-text-link-hover:#1E2A6E;--color-text-brand:#1E2A6E;--color-text-success:#2F6A12;--color-text-warning:#7A4E00;--color-text-danger:#A3231A;--color-text-danger-strong:#7A1A13;--color-bg-default:#FFFFFF;--color-bg-subtle:#F7F8FA;--color-bg-sunken:#F1F2F5;--color-bg-inverse:#0E1120;--color-bg-inverse-hover:#262A3B;--color-bg-brand-soft:#EEF1FC;--color-bg-success-soft:#EEF7E6;--color-bg-warning-soft:#FFF6DD;--color-bg-danger-soft:#FDECEA;--color-border-default:#E6E8EE;--color-border-strong:#D3D6DE;--color-border-hover:#B9BDC8;--color-border-focus:#2736A6;--color-border-success:#BFE0A8;--color-border-warning:#F3D48A;--color-border-danger:#F2B8B1;--color-icon-subtle:#8A8F9C;--color-icon-brand:#2736A6;--color-icon-success:#3F9A2A;--color-icon-warning:#E3A008;--color-icon-danger:#D9442F;--color-scrim:rgba(14, 17, 32, 0.45);--shadow-focus:0 0 0 4px rgba(39, 54, 166, 0.14);--shadow-lift:0 12px 32px -12px rgba(30, 42, 110, 0.22);--shadow-popover:0 20px 48px -16px rgba(14, 17, 32, 0.28);--shadow-overlay:0 32px 80px -24px rgba(9, 14, 60, 0.45);--duration-fast:150ms;--duration-base:220ms;--duration-slow:420ms;--ease-out:cubic-bezier(0.2, 0.7, 0.2, 1);--radius-xs:2px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-2xl:24px;--radius-full:999px}
+body{margin:0}
+a{color:var(--color-text-link)}a:not([class]):hover{color:var(--color-text-link-hover)}
+:focus-visible{outline:2px solid var(--color-border-focus);outline-offset:2px}
+.j-btn{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),transform var(--duration-fast) var(--ease-out)}
+.j-btn:active{transform:translateY(1px)}
+.j-btn--primary{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-btn--primary:hover{background:var(--color-bg-inverse-hover);border-color:var(--color-bg-inverse-hover);color:var(--color-text-inverse);box-shadow:var(--shadow-lift)}
+.j-btn--secondary{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-btn--secondary:hover{background:var(--color-bg-subtle);border-color:var(--color-text-default);color:var(--color-text-default)}
+.j-btn--destructive{background:var(--color-text-danger);border:1px solid var(--color-text-danger);color:var(--color-text-inverse)}
+.j-btn--destructive:hover{background:var(--color-text-danger-strong);border-color:var(--color-text-danger-strong)}
+.j-btn--secondary-danger{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-danger)}
+.j-btn--secondary-danger:hover{background:var(--color-bg-danger-soft);border-color:var(--color-text-danger);color:var(--color-text-danger)}
+.j-btn--link{background:transparent;border:none;color:var(--color-text-link);text-decoration:underline;text-decoration-color:rgba(39,54,166,.35);text-underline-offset:4px}
+.j-btn--link:hover{color:var(--color-text-link-hover);text-decoration-color:currentColor}
+.j-btn--danger{background:transparent;border:none;color:var(--color-text-danger);text-decoration:underline;text-decoration-color:rgba(163,35,26,.35);text-underline-offset:4px}
+.j-btn--danger:hover{text-decoration-color:currentColor}
+.j-btn[disabled]{cursor:not-allowed}
+.j-chip{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-chip--off{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-chip--off:hover{border-color:var(--color-text-default)}
+.j-chip--on{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-chip-dyn:hover{border-color:var(--color-text-default)!important}
+.j-nav{transition:background-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-nav:not([aria-current]):hover{background:var(--color-bg-subtle);color:var(--color-text-default)!important}
+.j-lift{transition:transform var(--duration-base) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),border-color var(--duration-base) var(--ease-out)}
+.j-lift:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);border-color:var(--color-border-strong)!important}
+.j-item{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-item[aria-pressed="false"]:hover{background:var(--color-bg-subtle)!important}
+.j-row{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-row:hover{background:var(--color-bg-subtle)}
+input,select,textarea{transition:border-color var(--duration-fast) var(--ease-out),box-shadow var(--duration-fast) var(--ease-out)}
+input:hover,select:hover,textarea:hover{border-color:var(--color-border-hover)!important}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--color-border-focus)!important;box-shadow:var(--shadow-focus)}
+.j-bar{transition:width var(--duration-slow) var(--ease-out)}
+.j-pulse{animation:jpulse 2s var(--ease-out) infinite}
+@keyframes jpulse{0%{box-shadow:0 0 0 0 rgba(63,154,42,.5)}70%,100%{box-shadow:0 0 0 7px rgba(63,154,42,0)} }
+.j-in{animation:jin 260ms var(--ease-out)}
+@keyframes jin{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none} }
+.j-spin{animation:jspin 700ms linear infinite}
+@keyframes jspin{to{transform:rotate(360deg)} }
+.j-pop{animation:jpop var(--duration-slow) var(--ease-out)}
+@keyframes jpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08);opacity:1}100%{transform:scale(1)} }
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important} }
+</style>
+<link rel="stylesheet" href="/proto.css">
+</head>
+<body class="proto-celular">
+<div id="app"></div>
+<script type="text/x-dc-template" id="dc-template">
+<div style="position: relative; width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; display: flex; flex-direction: column; background: #FFFFFF; color: #0E1120; font-family: Geist, Inter, system-ui, sans-serif; font-size: 15px; line-height: 1.5"><header style="flex: none; padding: 16px 20px 12px; display: flex; flex-direction: column; gap: 12px; border-bottom: 1px solid #E6E8EE"><div style="display: flex; align-items: center; gap: 12px"><a href="/celular/lider" aria-label="Voltar para o início" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; box-sizing: border-box; border-radius: 50%; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; cursor: pointer; flex: none; text-decoration: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13.5 5.5 8 11l5.5 5.5"></path></svg></a><div style="display: flex; flex-direction: column; flex: 1 1 auto"><h1 style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em">Aprovar</h1><span style="font-size: 13px; line-height: 1.45; color: #5E6372">Equipe Turquesa · {{ restantes }}</span></div><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: #5E6372">{{ progTexto }}</span></div><div aria-hidden="true" style="height: 4px; border-radius: 999px; background: #F1F2F5"><span class="j-bar" style="display: block; width: {{ progresso }}; height: 4px; border-radius: 999px; background: #0E1120"></span></div></header><sc-if value="{{ temAtual }}" hint-placeholder-val="{{ true }}"><div style="flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column"><main style="flex: 1 1 auto; min-height: 0; overflow-y: auto; padding: 16px 20px; display: flex; flex-direction: column; gap: 16px"><sc-if value="{{ temUltimo }}" hint-placeholder-val="{{ false }}"><div role="status" class="j-in" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 4px 0 12px; border-radius: 12px; background: {{ ultimoBg }}; color: {{ ultimoCor }}; font-size: 13px; line-height: 1.45"><span style="display: flex; align-items: center; gap: 6px; padding: 10px 0"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5 9.5 15.5 16.5 7.5"></path></svg>{{ ultimoTexto }}</span><button type="button" onClick="{{ desfazer }}" style="min-height: 40px; padding: 0 10px; border: none; background: transparent; color: inherit; font-family: inherit; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer">Desfazer</button></div></sc-if><div role="img" aria-label="{{ c.foto }}" class="j-in" style="height: 280px; flex: none; border-radius: 16px; background: linear-gradient(135deg, #EEF1FC, #EEF7E6); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; color: #5E6372; font-size: 13px; line-height: 1.45"><span style="display: flex; align-items: center; justify-content: center; width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; color: #1E2A6E"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 1 2-2h2l1.5-2h5L15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><circle cx="11" cy="12" r="3.2"></circle></svg></span>{{ c.foto }}</div><div style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #CCFBF1; color: #115E59; font-size: 13px; font-weight: 600; flex: none">{{ c.ini }}</span><span style="display: flex; flex-direction: column"><span style="font-size: 15px; line-height: 1.5; font-weight: 600">{{ c.nome }}</span><span style="font-size: 13px; line-height: 1.45; color: #5E6372">{{ c.acao }} · {{ c.quando }}</span></span></div><sc-if value="{{ naoCorrigindo }}" hint-placeholder-val="{{ true }}"><div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; padding: 14px 16px; border-radius: 12px; background: #F7F8FA"><span style="display: flex; flex-direction: column; gap: 4px"><span style="font-family: 'Geist Mono', ui-monospace, SFMono-Regular, monospace; font-size: 12px; line-height: 1.2; letter-spacing: 0.01em; text-transform: none; color: #5E6372">{{ c.conta }}</span><span aria-live="polite" style="line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; font-size: 32px">{{ c.pts }}</span><sc-if value="{{ c.temCorr }}" hint-placeholder-val="{{ false }}"><span style="font-size: 13px; line-height: 1.45; color: #7A4E00">{{ c.corr }}</span></sc-if></span><button type="button" class="j-btn j-btn--link" onClick="{{ abrirCorrecao }}" style="min-height: 44px; padding: 0; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Corrigir</button></div></sc-if><sc-if value="{{ corrigindo }}" hint-placeholder-val="{{ false }}"><div class="j-in" style="display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border-radius: 12px; border: 1px solid #D3D6DE"><span style="font-size: 13px; line-height: 1.45; font-weight: 600; color: #0E1120">Quantidade correta</span><div style="display: flex; align-items: center; gap: 12px"><button type="button" aria-label="Diminuir" onClick="{{ menos }}" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; box-sizing: border-box; border-radius: 50%; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; cursor: pointer; flex: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h12"></path></svg></button><span aria-live="polite" style="flex: 1 1 auto; text-align: center; font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.02em; font-variant-numeric: tabular-nums">{{ qEditTxt }}</span><button type="button" aria-label="Aumentar" onClick="{{ mais }}" style="display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; box-sizing: border-box; border-radius: 50%; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; cursor: pointer; flex: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5v12"></path><path d="M5 11h12"></path></svg></button></div><span style="font-size: 13px; line-height: 1.45; color: #1E2A6E">{{ qPrevia }}</span><div style="display: flex; gap: 8px"><button type="button" class="j-btn j-btn--primary" onClick="{{ salvarCorrecao }}" style="flex: 1 1 0; min-height: 44px; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Salvar</button><button type="button" class="j-btn j-btn--secondary" onClick="{{ cancelarCorrecao }}" style="flex: 1 1 0; min-height: 44px; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Cancelar</button></div></div></sc-if></main><footer style="flex: none; display: flex; gap: 8px; padding: 12px 20px 24px; border-top: 1px solid #E6E8EE; background: #FFFFFF"><button type="button" class="j-btn j-btn--secondary-danger" onClick="{{ abrirRecusa }}" style="flex: 1 1 0; height: 56px; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Recusar</button><button type="button" class="j-btn j-btn--primary" onClick="{{ aprovar }}" style="flex: 2 1 0; display: flex; align-items: center; justify-content: center; gap: 8px; height: 56px; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5 9.5 15.5 16.5 7.5"></path></svg>Aprovar</button></footer></div></sc-if><sc-if value="{{ vazio }}" hint-placeholder-val="{{ false }}"><div class="j-in" style="flex: 1 1 auto; padding: 24px 20px; display: flex; flex-direction: column; gap: 24px"><sc-if value="{{ temUltimo }}" hint-placeholder-val="{{ false }}"><div role="status" class="j-in" style="display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 4px 0 12px; border-radius: 12px; background: {{ ultimoBg }}; color: {{ ultimoCor }}; font-size: 13px; line-height: 1.45"><span style="display: flex; align-items: center; gap: 6px; padding: 10px 0"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5 9.5 15.5 16.5 7.5"></path></svg>{{ ultimoTexto }}</span><button type="button" onClick="{{ desfazer }}" style="min-height: 40px; padding: 0 10px; border: none; background: transparent; color: inherit; font-family: inherit; font-size: 15px; font-weight: 600; text-decoration: underline; cursor: pointer">Desfazer</button></div></sc-if><div style="flex: 1 1 auto; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; text-align: center"><span aria-hidden="true" class="j-pop" style="display: flex; align-items: center; justify-content: center; width: 72px; height: 72px; border-radius: 50%; background: #EEF7E6; color: #2F6A12"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5 9.5 15.5 16.5 7.5"></path></svg></span><h2 role="status" style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 48px; line-height: 1.05; font-weight: 400; letter-spacing: -0.01em">Fila zerada</h2><p style="margin: 0; max-width: 300px; font-size: 15px; line-height: 1.5; color: #5E6372">{{ fimTexto }}</p></div><a href="/celular/lider" class="j-btn j-btn--primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 24px; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; text-decoration-skip-ink: auto; width: 100%; text-decoration: none">Voltar ao início</a></div></sc-if><sc-if value="{{ recusando }}" hint-placeholder-val="{{ false }}"><div style="position: absolute; inset: 0; z-index: 20; display: flex; flex-direction: column; justify-content: flex-end"><div aria-hidden="true" onClick="{{ fecharRecusa }}" style="position: absolute; inset: 0; background: rgba(14, 17, 32, 0.45)"></div><div role="dialog" aria-modal="true" aria-labelledby="rec-t" class="j-in" style="position: relative; padding: 12px 20px 24px; border-radius: 24px 24px 0 0; background: #FFFFFF; display: flex; flex-direction: column; gap: 16px"><span aria-hidden="true" style="align-self: center; width: 40px; height: 4px; border-radius: 999px; background: #D3D6DE"></span><h2 id="rec-t" style="margin: 0; font-size: 20px; line-height: 1.3; font-weight: 600; letter-spacing: -0.01em">Por que está recusando?</h2><span style="margin-top: -8px; font-size: 13px; line-height: 1.45; color: #5E6372">{{ c.nome }} vê esta mensagem.</span><div style="display: flex; flex-wrap: wrap; gap: 6px"><sc-for list="{{ rapidos }}" as="r" hint-placeholder-count="4"><button type="button" class="{{ r.cls }}" aria-pressed="{{ r.ativo }}" onClick="{{ r.pick }}" style="min-height: 44px; padding: 0 14px; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 13px; cursor: pointer">{{ r.txt }}</button></sc-for></div><textarea aria-label="Motivo" rows="2" placeholder="Ou escreva com suas palavras" value="{{ motivo }}" onChange="{{ digitarMotivo }}" style="padding: 12px 14px; border-radius: 12px; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; font-family: inherit; font-size: 15px; box-sizing: border-box; width: 100%; resize: none"></textarea><button type="button" class="j-btn" disabled="{{ semMotivo }}" onClick="{{ confirmarRecusa }}" style="height: 52px; border: none; border-radius: 999px; background: {{ recusaBg }}; color: {{ recusaCor }}; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Confirmar recusa</button><button type="button" onClick="{{ fecharRecusa }}" style="min-height: 44px; border: none; background: transparent; color: #0E1120; font-family: inherit; font-size: 15px; cursor: pointer">Cancelar</button></div></div></sc-if></div>
+</script>
+<script type="text/x-dc-logic" id="dc-logic">class Component extends DCLogic {
+renderVals() {
+const st = this.state || {};
+const fmt = (n) => String(Math.round(n * 10) / 10).replace('.', ',');
+const base = [
+{ id: 'marina', nome: 'Marina Souza', ini: 'MS', acao: 'Tampinhas plásticas', q: 4.5, un: ['kg', 'kg'], rate: 10, quando: 'hoje, 14:32', passo: 0.5 },
+{ id: 'bianca', nome: 'Bianca Rocha', ini: 'BR', acao: 'Roupa infantil', q: 3, un: ['peça', 'peças'], rate: 15, quando: 'hoje, 09:48', passo: 1 },
+{ id: 'joao', nome: 'João Pedro Reis', ini: 'JR', acao: 'Tampinhas plásticas', q: 1.5, un: ['kg', 'kg'], rate: 10, quando: 'ontem, 10:15', passo: 0.5 }
+];
+const aj = st.aj || {};
+const itens = base.map((b) => { const q = aj[b.id] != null ? aj[b.id] : b.q; return Object.assign({}, b, { qq: q, pts: Math.round(q * b.rate), qtd: fmt(q) + ' ' + (q === 1 ? b.un[0] : b.un[1]), corr: aj[b.id] != null ? 'Corrigido de ' + fmt(b.q) + ' ' + (b.q === 1 ? b.un[0] : b.un[1]) : '' }); });
+const fila = st.fila || itens.map((t) => t.id);
+const pend = itens.filter((t) => fila.indexOf(t.id) !== -1);
+const cur = pend[0] || null;
+const feitos = itens.length - pend.length;
+const cont = { ok: st.ok || 0, okPts: st.okPts || 0, no: st.no || 0 };
+const decidir = (tipo, motivo) => {
+if (!cur) { return; }
+this.setState({ fila: fila.filter((id) => id !== cur.id), ultimo: { nome: cur.nome, pts: cur.pts, tipo: tipo, fila: fila, cont: cont }, recusando: false, motivo: '', corrigindo: false,
+ok: cont.ok + (tipo === 'ok' ? 1 : 0), okPts: cont.okPts + (tipo === 'ok' ? cur.pts : 0), no: cont.no + (tipo === 'no' ? 1 : 0) });
+};
+const motivo = st.motivo || '';
+const rapidos = ['A foto não mostra a balança', 'A quantidade não confere', 'A foto está ilegível', 'Não é desta edição'];
+const qEdit = st.qEdit != null ? st.qEdit : (cur ? cur.qq : 0);
+return {
+restantes: pend.length === 1 ? '1 pendente' : pend.length + ' pendentes',
+progresso: Math.round(feitos / itens.length * 100) + '%',
+progTexto: feitos + ' de ' + itens.length,
+temAtual: !!cur,
+vazio: !cur,
+c: cur ? { nome: cur.nome, ini: cur.ini, acao: cur.acao, qtd: cur.qtd, pts: cur.pts + ' pontos', conta: cur.qtd + ' × ' + cur.rate + ' pts por ' + cur.un[0], quando: cur.quando, foto: 'Foto enviada por ' + cur.nome.split(' ')[0], corr: cur.corr, temCorr: !!cur.corr } : {},
+aprovar: () => decidir('ok'),
+abrirRecusa: () => this.setState({ recusando: true, motivo: '' }),
+fecharRecusa: () => this.setState({ recusando: false }),
+recusando: !!st.recusando,
+motivo: motivo,
+digitarMotivo: (e) => this.setState({ motivo: e.target.value }),
+rapidos: rapidos.map((r) => ({ txt: r, ativo: motivo === r, cls: motivo === r ? 'j-chip j-chip--on' : 'j-chip j-chip--off', pick: () => this.setState({ motivo: r }) })),
+semMotivo: motivo.trim().length < 3,
+recusaBg: motivo.trim().length < 3 ? '#F1F2F5' : '#A3231A',
+recusaCor: motivo.trim().length < 3 ? '#5E6372' : '#FFFFFF',
+confirmarRecusa: () => decidir('no', motivo),
+corrigindo: !!st.corrigindo,
+naoCorrigindo: !st.corrigindo,
+abrirCorrecao: () => this.setState({ corrigindo: true, qEdit: cur ? cur.qq : 0 }),
+qEditTxt: fmt(qEdit) + ' ' + (cur ? (qEdit === 1 ? cur.un[0] : cur.un[1]) : ''),
+qPrevia: cur ? 'Fica ' + Math.round(qEdit * cur.rate) + ' pontos (antes ' + cur.pts + ')' : '',
+menos: () => { if (cur) { this.setState({ qEdit: Math.max(cur.passo, qEdit - cur.passo) }); } },
+mais: () => { if (cur) { this.setState({ qEdit: qEdit + cur.passo }); } },
+salvarCorrecao: () => { if (cur) { this.setState({ corrigindo: false, aj: Object.assign({}, aj, { [cur.id]: qEdit }), qEdit: null }); } },
+cancelarCorrecao: () => this.setState({ corrigindo: false, qEdit: null }),
+temUltimo: !!st.ultimo,
+ultimoTexto: st.ultimo ? (st.ultimo.tipo === 'ok' ? st.ultimo.nome.split(' ')[0] + ': +' + st.ultimo.pts + ' pts no placar' : st.ultimo.nome.split(' ')[0] + ': recusado') : '',
+ultimoBg: st.ultimo && st.ultimo.tipo === 'no' ? '#FDECEA' : '#EEF7E6',
+ultimoCor: st.ultimo && st.ultimo.tipo === 'no' ? '#A3231A' : '#2F6A12',
+desfazer: () => { const u = st.ultimo; if (u) { this.setState({ fila: u.fila, ultimo: null, ok: u.cont.ok, okPts: u.cont.okPts, no: u.cont.no }); } },
+fimTexto: 'Você aprovou ' + cont.ok + ' e ' + cont.okPts + ' pontos entraram para a Turquesa' + (cont.no ? '. Recusou ' + cont.no + '.' : '.')
+};
+}
+}
+</script>
+<a class="proto-telas" href="/" title="Todas as telas do protótipo">Telas</a>
+<script src="/morphdom.min.js"></script>
+<script src="/proto.js"></script>
+</body>
+</html>

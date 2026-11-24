@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Primeiro acesso (convite) · Gincana Solidária</title>
+<link rel="icon" href="/assets/cestacorp-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif&amp;display=swap">
+<style>:root{--color-text-default:#0E1120;--color-text-muted:#5E6372;--color-text-inverse:#FFFFFF;--color-text-link:#2736A6;--color-text-link-hover:#1E2A6E;--color-text-brand:#1E2A6E;--color-text-success:#2F6A12;--color-text-warning:#7A4E00;--color-text-danger:#A3231A;--color-text-danger-strong:#7A1A13;--color-bg-default:#FFFFFF;--color-bg-subtle:#F7F8FA;--color-bg-sunken:#F1F2F5;--color-bg-inverse:#0E1120;--color-bg-inverse-hover:#262A3B;--color-bg-brand-soft:#EEF1FC;--color-bg-success-soft:#EEF7E6;--color-bg-warning-soft:#FFF6DD;--color-bg-danger-soft:#FDECEA;--color-border-default:#E6E8EE;--color-border-strong:#D3D6DE;--color-border-hover:#B9BDC8;--color-border-focus:#2736A6;--color-border-success:#BFE0A8;--color-border-warning:#F3D48A;--color-border-danger:#F2B8B1;--color-icon-subtle:#8A8F9C;--color-icon-brand:#2736A6;--color-icon-success:#3F9A2A;--color-icon-warning:#E3A008;--color-icon-danger:#D9442F;--color-scrim:rgba(14, 17, 32, 0.45);--shadow-focus:0 0 0 4px rgba(39, 54, 166, 0.14);--shadow-lift:0 12px 32px -12px rgba(30, 42, 110, 0.22);--shadow-popover:0 20px 48px -16px rgba(14, 17, 32, 0.28);--shadow-overlay:0 32px 80px -24px rgba(9, 14, 60, 0.45);--duration-fast:150ms;--duration-base:220ms;--duration-slow:420ms;--ease-out:cubic-bezier(0.2, 0.7, 0.2, 1);--radius-xs:2px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-2xl:24px;--radius-full:999px}
+body{margin:0}
+a{color:var(--color-text-link)}a:not([class]):hover{color:var(--color-text-link-hover)}
+:focus-visible{outline:2px solid var(--color-border-focus);outline-offset:2px}
+.j-btn{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),transform var(--duration-fast) var(--ease-out)}
+.j-btn:active{transform:translateY(1px)}
+.j-btn--primary{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-btn--primary:hover{background:var(--color-bg-inverse-hover);border-color:var(--color-bg-inverse-hover);color:var(--color-text-inverse);box-shadow:var(--shadow-lift)}
+.j-btn--secondary{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-btn--secondary:hover{background:var(--color-bg-subtle);border-color:var(--color-text-default);color:var(--color-text-default)}
+.j-btn--destructive{background:var(--color-text-danger);border:1px solid var(--color-text-danger);color:var(--color-text-inverse)}
+.j-btn--destructive:hover{background:var(--color-text-danger-strong);border-color:var(--color-text-danger-strong)}
+.j-btn--secondary-danger{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-danger)}
+.j-btn--secondary-danger:hover{background:var(--color-bg-danger-soft);border-color:var(--color-text-danger);color:var(--color-text-danger)}
+.j-btn--link{background:transparent;border:none;color:var(--color-text-link);text-decoration:underline;text-decoration-color:rgba(39,54,166,.35);text-underline-offset:4px}
+.j-btn--link:hover{color:var(--color-text-link-hover);text-decoration-color:currentColor}
+.j-btn--danger{background:transparent;border:none;color:var(--color-text-danger);text-decoration:underline;text-decoration-color:rgba(163,35,26,.35);text-underline-offset:4px}
+.j-btn--danger:hover{text-decoration-color:currentColor}
+.j-btn[disabled]{cursor:not-allowed}
+.j-chip{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-chip--off{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-chip--off:hover{border-color:var(--color-text-default)}
+.j-chip--on{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-chip-dyn:hover{border-color:var(--color-text-default)!important}
+.j-nav{transition:background-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-nav:not([aria-current]):hover{background:var(--color-bg-subtle);color:var(--color-text-default)!important}
+.j-lift{transition:transform var(--duration-base) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),border-color var(--duration-base) var(--ease-out)}
+.j-lift:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);border-color:var(--color-border-strong)!important}
+.j-item{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-item[aria-pressed="false"]:hover{background:var(--color-bg-subtle)!important}
+.j-row{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-row:hover{background:var(--color-bg-subtle)}
+input,select,textarea{transition:border-color var(--duration-fast) var(--ease-out),box-shadow var(--duration-fast) var(--ease-out)}
+input:hover,select:hover,textarea:hover{border-color:var(--color-border-hover)!important}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--color-border-focus)!important;box-shadow:var(--shadow-focus)}
+.j-bar{transition:width var(--duration-slow) var(--ease-out)}
+.j-pulse{animation:jpulse 2s var(--ease-out) infinite}
+@keyframes jpulse{0%{box-shadow:0 0 0 0 rgba(63,154,42,.5)}70%,100%{box-shadow:0 0 0 7px rgba(63,154,42,0)} }
+.j-in{animation:jin 260ms var(--ease-out)}
+@keyframes jin{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none} }
+.j-spin{animation:jspin 700ms linear infinite}
+@keyframes jspin{to{transform:rotate(360deg)} }
+.j-pop{animation:jpop var(--duration-slow) var(--ease-out)}
+@keyframes jpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08);opacity:1}100%{transform:scale(1)} }
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important} }
+</style>
+<link rel="stylesheet" href="/proto.css">
+</head>
+<body class="proto-computador">
+<div id="app"></div>
+<script type="text/x-dc-template" id="dc-template">
+<div style="min-height: 100vh; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(480px, 100%), 1fr)); background: #FFFFFF; color: #0E1120; font-family: Geist, Inter, system-ui, sans-serif; font-size: 15px; line-height: 1.5"><div style="min-height: 100vh; box-sizing: border-box; padding: 48px 24px 40px; display: flex; flex-direction: column; align-items: center; background: #FFFFFF"><div style="display: flex; align-items: center; gap: 10px; line-height: 1.5; font-weight: 600; font-size: 17px"><img src="/assets/cestacorp-mark.png" alt="" style="display: block; width: 32px; height: 32px; flex: none">Gincana Solidária</div><div style="flex: 1 1 auto; width: 100%; max-width: 380px; display: flex; flex-direction: column; justify-content: center; gap: 24px; padding: 48px 0"><sc-if value="{{ editando }}" hint-placeholder-val="{{ true }}"><div style="display: flex; flex-direction: column; gap: 24px"><div style="display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center"><h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 48px; line-height: 1.05; font-weight: 400; letter-spacing: -0.01em; text-wrap: balance">Crie sua senha</h1><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5E6372">Olá, Marina. Você foi convidada para a <strong style="color: #0E1120">Equipe Turquesa</strong> da Gincana Solidária 2026.</p></div><div style="display: flex; flex-direction: column; gap: 16px"><div style="display: flex; flex-direction: column; gap: 6px"><span style="font-size: 13px; line-height: 1.45; font-weight: 600; color: #0E1120">E-mail</span><span style="display: flex; align-items: center; height: 44px; padding: 0 14px; border-radius: 12px; background: #F7F8FA; color: #5E6372">marina.souza@cestacorp.com.br</span></div><div style="display: flex; flex-direction: column; gap: 6px"><label for="s1" style="font-size: 13px; line-height: 1.45; font-weight: 600; color: #0E1120">Nova senha</label><div style="position: relative"><input id="s1" type="{{ tipo }}" autocomplete="new-password" value="{{ s1 }}" onChange="{{ digitar1 }}" style="height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; font-family: inherit; font-size: 15px; box-sizing: border-box; width: 100%; padding-right: 84px"><button type="button" onClick="{{ alternar }}" style="position: absolute; right: 4px; top: 0; height: 44px; padding: 0 12px; border: none; background: transparent; color: #2736A6; font-family: inherit; font-size: 13px; font-weight: 500; cursor: pointer">{{ verTexto }}</button></div></div><ul aria-label="Requisitos da senha" style="list-style: none; margin: -4px 0 0; padding: 0; display: flex; flex-direction: column; gap: 6px"><sc-for list="{{ regras }}" as="r" hint-placeholder-count="3"><li style="display: flex; align-items: center; gap: 8px; font-size: 13px; line-height: 1.45; color: {{ r.cor }}"><span aria-hidden="true" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 1.5px solid {{ r.borda }}; background: {{ r.bg }}; color: #FFFFFF; font-size: 11px; font-weight: 600">{{ r.marca }}</span>{{ r.txt }}</li></sc-for></ul><div style="display: flex; flex-direction: column; gap: 6px"><label for="s2" style="font-size: 13px; line-height: 1.45; font-weight: 600; color: #0E1120">Repita a senha</label><input id="s2" type="{{ tipo }}" autocomplete="new-password" value="{{ s2 }}" onChange="{{ digitar2 }}" aria-describedby="s2e" style="height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid #D3D6DE; background: #FFFFFF; color: #0E1120; font-family: inherit; font-size: 15px; box-sizing: border-box; width: 100%"><sc-if value="{{ erroConfere }}" hint-placeholder-val="{{ false }}"><span id="s2e" style="font-size: 13px; line-height: 1.45; color: #A3231A">As duas senhas ainda não são iguais.</span></sc-if></div><div style="padding-top: 4px"><button type="button" class="j-btn" disabled="{{ bloqueado }}" aria-busy="{{ criando }}" onClick="{{ criar }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 52px; padding: 0 24px; border: none; border-radius: 999px; background: {{ botaoBg }}; color: {{ botaoCor }}; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer"><sc-if value="{{ criando }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" class="j-spin" style="width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.35); border-top-color: #FFFFFF"></span></sc-if>{{ botaoTexto }}</button></div></div></div></sc-if><sc-if value="{{ feito }}" hint-placeholder-val="{{ false }}"><div class="j-in" style="display: flex; flex-direction: column; align-items: center; gap: 20px; text-align: center"><span aria-hidden="true" class="j-pop" style="display: flex; align-items: center; justify-content: center; width: 64px; height: 64px; border-radius: 50%; background: #EEF7E6; color: #2F6A12"><svg aria-hidden="true" width="30" height="30" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 11.5 9.5 15.5 16.5 7.5"></path></svg></span><div style="display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center"><h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 48px; line-height: 1.05; font-weight: 400; letter-spacing: -0.01em; text-wrap: balance">Tudo pronto, Marina</h1><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5E6372">Sua senha foi criada. A Equipe Turquesa está em 3º lugar, a 280 pontos da Laranja.</p></div><a href="/colaborador/placar" class="j-btn j-btn--primary" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 52px; padding: 0 24px; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; text-decoration-skip-ink: auto; width: 100%; text-decoration: none">Ver o placar<svg aria-hidden="true" width="18" height="18" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 11h12"></path><path d="M12.5 6.5 17 11l-4.5 4.5"></path></svg></a></div></sc-if></div><p style="margin: 0; max-width: 420px; text-align: center; font-size: 13px; line-height: 1.45; color: #5E6372">O convite vale por 7 dias. Se expirar, peça um novo à administradora da gincana.</p></div><div style="position: relative; min-height: 100vh; overflow: hidden; background: #0E2111"><img src="/assets/trofeu-mesa.jpg" alt="Troféu da Gincana Solidária: duas figuras erguendo um coração com a marca da Cestacorp, sobre uma mesa de madeira" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block"></div></div>
+</script>
+<script type="text/x-dc-logic" id="dc-logic">class Component extends DCLogic {
+renderVals() {
+const st = this.state || {};
+const s1 = st.s1 || '';
+const s2 = st.s2 || '';
+const fase = st.fase || 'editando';
+const regras = [
+{ ok: s1.length >= 8, txt: 'Pelo menos 8 caracteres' },
+{ ok: /[0-9]/.test(s1), txt: 'Um número' },
+{ ok: /[A-Za-zÀ-ú]/.test(s1), txt: 'Uma letra' }
+];
+const todas = regras.every((r) => r.ok);
+const confere = s2.length > 0 && s1 === s2;
+const pronto = todas && confere && fase === 'editando';
+const criando = fase === 'criando';
+return {
+s1: s1, s2: s2,
+digitar1: (e) => this.setState({ s1: e.target.value }),
+digitar2: (e) => this.setState({ s2: e.target.value }),
+tipo: st.ver ? 'text' : 'password',
+verTexto: st.ver ? 'Ocultar' : 'Mostrar',
+alternar: () => this.setState({ ver: !st.ver }),
+regras: regras.map((r) => ({ txt: r.txt, cor: r.ok ? '#2F6A12' : '#5E6372', bg: r.ok ? '#2F6A12' : 'transparent', borda: r.ok ? '#2F6A12' : '#D3D6DE', marca: r.ok ? '✓' : '' })),
+erroConfere: s2.length > 0 && !confere,
+bloqueado: !pronto,
+criando: criando,
+criar: () => { this.setState({ fase: 'criando' }); setTimeout(() => this.setState({ fase: 'pronto' }), 800); },
+botaoTexto: criando ? 'Criando sua senha…' : 'Criar senha e entrar',
+botaoBg: (pronto || criando) ? '#0E1120' : '#F1F2F5',
+botaoCor: (pronto || criando) ? '#FFFFFF' : '#5E6372',
+editando: fase !== 'pronto',
+feito: fase === 'pronto'
+};
+}
+}
+</script>
+<a class="proto-telas" href="/" title="Todas as telas do protótipo">Telas</a>
+<script src="/morphdom.min.js"></script>
+<script src="/proto.js"></script>
+</body>
+</html>

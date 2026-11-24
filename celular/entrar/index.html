@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Entrar no celular · Gincana Solidária</title>
+<link rel="icon" href="/assets/cestacorp-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif&amp;display=swap">
+<style>:root{--color-text-default:#0E1120;--color-text-muted:#5E6372;--color-text-inverse:#FFFFFF;--color-text-link:#2736A6;--color-text-link-hover:#1E2A6E;--color-text-brand:#1E2A6E;--color-text-success:#2F6A12;--color-text-warning:#7A4E00;--color-text-danger:#A3231A;--color-text-danger-strong:#7A1A13;--color-bg-default:#FFFFFF;--color-bg-subtle:#F7F8FA;--color-bg-sunken:#F1F2F5;--color-bg-inverse:#0E1120;--color-bg-inverse-hover:#262A3B;--color-bg-brand-soft:#EEF1FC;--color-bg-success-soft:#EEF7E6;--color-bg-warning-soft:#FFF6DD;--color-bg-danger-soft:#FDECEA;--color-border-default:#E6E8EE;--color-border-strong:#D3D6DE;--color-border-hover:#B9BDC8;--color-border-focus:#2736A6;--color-border-success:#BFE0A8;--color-border-warning:#F3D48A;--color-border-danger:#F2B8B1;--color-icon-subtle:#8A8F9C;--color-icon-brand:#2736A6;--color-icon-success:#3F9A2A;--color-icon-warning:#E3A008;--color-icon-danger:#D9442F;--color-scrim:rgba(14, 17, 32, 0.45);--shadow-focus:0 0 0 4px rgba(39, 54, 166, 0.14);--shadow-lift:0 12px 32px -12px rgba(30, 42, 110, 0.22);--shadow-popover:0 20px 48px -16px rgba(14, 17, 32, 0.28);--shadow-overlay:0 32px 80px -24px rgba(9, 14, 60, 0.45);--duration-fast:150ms;--duration-base:220ms;--duration-slow:420ms;--ease-out:cubic-bezier(0.2, 0.7, 0.2, 1);--radius-xs:2px;--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--radius-xl:20px;--radius-2xl:24px;--radius-full:999px}
+body{margin:0}
+a{color:var(--color-text-link)}a:not([class]):hover{color:var(--color-text-link-hover)}
+:focus-visible{outline:2px solid var(--color-border-focus);outline-offset:2px}
+.j-btn{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),transform var(--duration-fast) var(--ease-out)}
+.j-btn:active{transform:translateY(1px)}
+.j-btn--primary{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-btn--primary:hover{background:var(--color-bg-inverse-hover);border-color:var(--color-bg-inverse-hover);color:var(--color-text-inverse);box-shadow:var(--shadow-lift)}
+.j-btn--secondary{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-btn--secondary:hover{background:var(--color-bg-subtle);border-color:var(--color-text-default);color:var(--color-text-default)}
+.j-btn--destructive{background:var(--color-text-danger);border:1px solid var(--color-text-danger);color:var(--color-text-inverse)}
+.j-btn--destructive:hover{background:var(--color-text-danger-strong);border-color:var(--color-text-danger-strong)}
+.j-btn--secondary-danger{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-danger)}
+.j-btn--secondary-danger:hover{background:var(--color-bg-danger-soft);border-color:var(--color-text-danger);color:var(--color-text-danger)}
+.j-btn--link{background:transparent;border:none;color:var(--color-text-link);text-decoration:underline;text-decoration-color:rgba(39,54,166,.35);text-underline-offset:4px}
+.j-btn--link:hover{color:var(--color-text-link-hover);text-decoration-color:currentColor}
+.j-btn--danger{background:transparent;border:none;color:var(--color-text-danger);text-decoration:underline;text-decoration-color:rgba(163,35,26,.35);text-underline-offset:4px}
+.j-btn--danger:hover{text-decoration-color:currentColor}
+.j-btn[disabled]{cursor:not-allowed}
+.j-chip{transition:background-color var(--duration-fast) var(--ease-out),border-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-chip--off{background:var(--color-bg-default);border:1px solid var(--color-border-strong);color:var(--color-text-default)}
+.j-chip--off:hover{border-color:var(--color-text-default)}
+.j-chip--on{background:var(--color-bg-inverse);border:1px solid var(--color-bg-inverse);color:var(--color-text-inverse)}
+.j-chip-dyn:hover{border-color:var(--color-text-default)!important}
+.j-nav{transition:background-color var(--duration-fast) var(--ease-out),color var(--duration-fast) var(--ease-out)}
+.j-nav:not([aria-current]):hover{background:var(--color-bg-subtle);color:var(--color-text-default)!important}
+.j-lift{transition:transform var(--duration-base) var(--ease-out),box-shadow var(--duration-base) var(--ease-out),border-color var(--duration-base) var(--ease-out)}
+.j-lift:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift);border-color:var(--color-border-strong)!important}
+.j-item{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-item[aria-pressed="false"]:hover{background:var(--color-bg-subtle)!important}
+.j-row{transition:background-color var(--duration-fast) var(--ease-out)}
+.j-row:hover{background:var(--color-bg-subtle)}
+input,select,textarea{transition:border-color var(--duration-fast) var(--ease-out),box-shadow var(--duration-fast) var(--ease-out)}
+input:hover,select:hover,textarea:hover{border-color:var(--color-border-hover)!important}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--color-border-focus)!important;box-shadow:var(--shadow-focus)}
+.j-bar{transition:width var(--duration-slow) var(--ease-out)}
+.j-pulse{animation:jpulse 2s var(--ease-out) infinite}
+@keyframes jpulse{0%{box-shadow:0 0 0 0 rgba(63,154,42,.5)}70%,100%{box-shadow:0 0 0 7px rgba(63,154,42,0)} }
+.j-in{animation:jin 260ms var(--ease-out)}
+@keyframes jin{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none} }
+.j-spin{animation:jspin 700ms linear infinite}
+@keyframes jspin{to{transform:rotate(360deg)} }
+.j-pop{animation:jpop var(--duration-slow) var(--ease-out)}
+@keyframes jpop{0%{transform:scale(.6);opacity:0}60%{transform:scale(1.08);opacity:1}100%{transform:scale(1)} }
+@media (prefers-reduced-motion: reduce){*,*::before,*::after{transition:none!important;animation:none!important} }
+</style>
+<link rel="stylesheet" href="/proto.css">
+</head>
+<body class="proto-celular">
+<div id="app"></div>
+<script type="text/x-dc-template" id="dc-template">
+<div style="width: 390px; height: 844px; box-sizing: border-box; overflow: hidden; display: flex; flex-direction: column; background: #FFFFFF; color: #0E1120; font-family: Geist, Inter, system-ui, sans-serif; font-size: 15px; line-height: 1.5"><div style="position: relative; flex: none; height: 240px; overflow: hidden; background: #0E2111"><img src="/assets/trofeu-mesa.jpg" alt="Troféu da Gincana Solidária" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block"><div aria-hidden="true" style="position: absolute; left: 0; right: 0; bottom: 0; height: 60%; background: linear-gradient(180deg, rgba(12, 18, 10, 0) 0%, rgba(12, 18, 10, 0.55) 53%, #0C120A 100%)"><div style="position: absolute; top: 101px; left: 1px; display: flex; align-items: center; gap: 8px; padding: 6px 10px 6px 6px; border-radius: 999px; font-size: 13px; line-height: 1.45; font-weight: 600; background-color: transparent; width: 157px; height: 31px"><img src="/assets/cestacorp-mark.png" alt="" style="display: block; width: 24px; height: 24px; flex: none"><span style="color: #ffffff">Gincana Solidária</span></div></div></div><main style="flex: 1 1 auto; min-height: 0; padding: 24px 20px; display: flex; flex-direction: column; gap: 20px"><div style="display: flex; flex-direction: column; gap: 6px"><h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; line-height: 1.05; font-weight: 400; letter-spacing: -0.01em; font-size: 40px">Acesse sua conta</h1><p style="margin: 0; font-size: 15px; line-height: 1.5; color: #5E6372">Entre com o e-mail da empresa.</p></div><div style="display: flex; flex-direction: column; gap: 16px"><div style="display: flex; flex-direction: column; gap: 6px"><label for="email" style="font-size: 13px; line-height: 1.45; font-weight: 600; color: #0E1120">E-mail</label><input id="email" type="email" autocomplete="username" inputmode="email" placeholder="voce@empresa.com.br" value="{{ email }}" onChange="{{ digitarEmail }}" aria-invalid="{{ erroEmail }}" aria-describedby="email-e" style="height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid {{ bordaEmail }}; background: #FFFFFF; color: #0E1120; font-family: inherit; font-size: 15px; box-sizing: border-box; width: 100%"><sc-if value="{{ erroEmail }}" hint-placeholder-val="{{ false }}"><span id="email-e" style="font-size: 13px; line-height: 1.45; color: #A3231A">Use o e-mail completo, por exemplo voce@empresa.com.br.</span></sc-if></div><div style="display: flex; flex-direction: column; gap: 6px"><label for="senha" style="font-size: 13px; line-height: 1.45; font-weight: 600; color: #0E1120">Senha</label><input id="senha" type="password" autocomplete="current-password" value="{{ senha }}" onChange="{{ digitarSenha }}" aria-invalid="{{ erroSenha }}" aria-describedby="senha-e" style="height: 44px; padding: 0 14px; border-radius: 12px; border: 1px solid {{ bordaSenha }}; background: #FFFFFF; color: #0E1120; font-family: inherit; font-size: 15px; box-sizing: border-box; width: 100%"><sc-if value="{{ erroSenha }}" hint-placeholder-val="{{ false }}"><span id="senha-e" style="font-size: 13px; line-height: 1.45; color: #A3231A">Digite sua senha.</span></sc-if></div><sc-if value="{{ erroGeral }}" hint-placeholder-val="{{ false }}"><div role="alert" class="j-in" style="padding: 12px 14px; border-radius: 12px; background: #FDECEA; color: #7A1A13; font-size: 13px; line-height: 1.45">{{ erroTexto }}</div></sc-if><sc-if value="{{ bloqueado }}" hint-placeholder-val="{{ false }}"><div role="alert" class="j-in" style="display: flex; flex-direction: column; gap: 4px; padding: 12px 14px; border-radius: 12px; background: #FDECEA; color: #7A1A13; font-size: 13px; line-height: 1.45"><strong>Acesso bloqueado por 5 minutos.</strong><a href="/esqueci-senha" style="color: #A3231A; font-weight: 600">Redefinir a senha</a></div></sc-if><button type="button" class="j-btn" disabled="{{ desabilitado }}" aria-busy="{{ conferindo }}" onClick="{{ entrar }}" style="display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; height: 52px; padding: 0 24px; border: none; border-radius: 999px; background: {{ botaoBg }}; color: {{ botaoCor }}; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer"><sc-if value="{{ conferindo }}" hint-placeholder-val="{{ false }}"><span aria-hidden="true" class="j-spin" style="width: 16px; height: 16px; box-sizing: border-box; border-radius: 50%; border: 2px solid rgba(255, 255, 255, 0.35); border-top-color: #FFFFFF"></span></sc-if>{{ botaoTexto }}</button><a id="ir-inicio" href="/celular/inicio" tabindex="-1" aria-hidden="true" style="display: none">início</a><div style="display: flex; justify-content: center"><a href="/esqueci-senha" class="j-btn j-btn--link" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0; box-sizing: border-box; border-radius: 999px; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer; white-space: nowrap; text-decoration-skip-ink: auto">Esqueci minha senha</a></div></div></main><p style="flex: none; margin: 0; padding: 0 20px 24px; text-align: center; font-size: 13px; line-height: 1.45; color: #5E6372">Primeiro acesso? <a href="/primeiro-acesso">Use o convite</a> do seu e-mail.</p></div>
+</script>
+<script type="text/x-dc-logic" id="dc-logic">class Component extends DCLogic {
+renderVals() {
+const st = this.state || {};
+const email = st.email || '';
+const senha = st.senha || '';
+const fase = st.fase || 'editando';
+const tent = st.tent || 0;
+const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+const bloqueado = tent >= 5;
+const conferindo = fase === 'conferindo' || fase === 'ok';
+const erroEmail = !!st.tentou && !emailOk;
+const erroSenha = !!st.tentou && senha === '';
+const restam = 5 - tent;
+return {
+email: email, senha: senha,
+digitarEmail: (e) => this.setState({ email: e.target.value }),
+digitarSenha: (e) => this.setState({ senha: e.target.value }),
+erroEmail: erroEmail, erroSenha: erroSenha,
+bordaEmail: erroEmail ? '#D9442F' : '#D3D6DE',
+bordaSenha: erroSenha ? '#D9442F' : '#D3D6DE',
+erroGeral: fase === 'erro' && !bloqueado,
+erroTexto: 'E-mail ou senha não conferem. ' + (restam === 1 ? 'Resta 1 tentativa.' : 'Restam ' + restam + ' tentativas.'),
+bloqueado: bloqueado, conferindo: conferindo, desabilitado: conferindo || bloqueado,
+botaoTexto: fase === 'ok' ? 'Entrando…' : (conferindo ? 'Conferindo…' : 'Entrar'),
+botaoBg: bloqueado ? '#F1F2F5' : '#0E1120',
+botaoCor: bloqueado ? '#5E6372' : '#FFFFFF',
+entrar: () => {
+if (bloqueado || conferindo) { return; }
+if (!emailOk || senha === '') { this.setState({ tentou: true }); return; }
+this.setState({ fase: 'conferindo', tentou: false });
+setTimeout(() => {
+if (senha.length >= 8) { this.setState({ fase: 'ok' }); setTimeout(() => { const a = document.getElementById('ir-inicio'); if (a) { a.click(); } }, 300); }
+else { this.setState({ fase: 'erro', tent: tent + 1, senha: '' }); }
+}, 900);
+}
+};
+}
+}
+</script>
+<a class="proto-telas" href="/" title="Todas as telas do protótipo">Telas</a>
+<script src="/morphdom.min.js"></script>
+<script src="/proto.js"></script>
+</body>
+</html>
